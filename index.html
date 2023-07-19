@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="fungsi.js"></script>
+</head>
+<body>
+    <main> 
+    <h1>BMI</h1>
+    <h3>Berat badan tentunya harus di kontrol agar bisa menjalani aktivitas sehari-hari dengan lancar, yuk di hitung :0</h3>
+    <main class="container">
+    <form id="form">
+    <!-- memakai form untuk pengisiannya -->
+    <div class="input-group" style="margin-top: 5px;">
+        <h4 style="margin-bottom: 3px;">Jenis Kelamin</h4>
+        <div class="form-check" style="margin-top: 2%;">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1" style="margin-left: -1%;">
+            Pria
+            </label>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" style="margin-left: 0.1%;">
+            <label class="form-check-label" for="flexRadioDefault1" style="margin-left: -1%;" >
+            Wanita
+            </label>
+        </div>
+    </div>
+    <!-- <div> diatas untuk jenis kelamin pria/wanita tadi dengan menggunakan type = radio -->
+    <div class="input-group1">
+        <h4 style="margin-bottom: 3px;">Berat Badan</h4>
+        <span class="input-group-text" id="basic-addon1">O</span>
+        <input type="text" id="input-berat" placeholder="kg" aria-label="bb" aria-describedby="basic-addon1" required>
+    </div>
+    <div class="input-group2" style="margin-top: -3%;">
+        <h4 style="margin-bottom: 3px;">Usia</h4>
+        <span class="input-group-text" id="basic-addon1">O</span>
+        <input type="text" class="form-control" placeholder="tahun" aria-label="usia" aria-describedby="basic-addon1" required>
+    </div>
+    <div class="input-group4" style="margin-top: -3%;">
+        <h4 style="margin-bottom: 3px;">Tinggi Badan</h4>
+        <span class="input-group-text" id="basic-addon1">O</span>
+        <input type="text" id="input-tinggi" placeholder="cm" aria-label="tb" aria-describedby="basic-addon1" required>
+    </div>
+    <!--- ketiga <div> diatas untuk membungkus input type text Berat badan, Usia, dan Tinggi Badan-->
+    <div class="btn-group" role="group" aria-label="Basic example" style="margin-top: 5%;" >
+        <button type="submit" onclick="hitung(event)" class="btn btn-primary">Hitung BMI</button>
+        <button style="margin-left: 0.5%;" type="submit" class="btn btn-secondary">Reset</button>
+    </div>
+    <!-- <div> diatas sebagai button type submit nya 3 <div> sebelumnya -->
+    </form>
+    </main>
+    <aside> 
+        <div class="hasil" style="margin-top: 1%;"> 
+        <p id="kata"></p>
+        <p id="hasilbmi"></p>
+        <p id="hasilbmi1"></p>
+        <p id="hasilbmi2"></p>
+        </div>
+    </aside>
+    <!-- ini memakai tag <aside> untuk menunjukkan hasil BMI nya -->
+</body>
+</html>
